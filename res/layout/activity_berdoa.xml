@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_sip"
+    tools:context=".BerdoaActivity"
+    android:fitsSystemWindows="true"
+    android:padding="8dp">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8539115547513021/6540384707">
+    </com.google.android.gms.ads.AdView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/adView">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>
